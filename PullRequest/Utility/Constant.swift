@@ -14,18 +14,3 @@ enum PR_STATUS: String{
     case close = "closed"
 }
 
-extension String {
-    func convertDate(inputFormat: String = "yyyy-MM-dd'T'HH:mm:ssZ", outputFormat: String = "dd MMM YYYY, HH:mm") -> String? {
-        let inputFormatter = DateFormatter()
-        inputFormatter.dateFormat = inputFormat
-
-        let outputFormatter = DateFormatter()
-        outputFormatter.dateFormat = outputFormat
-
-        let date = inputFormatter.date(from: self)
-        let dateString = outputFormatter.string(from: date ?? Date())
-        
-        return dateString
-    }
-
-}
