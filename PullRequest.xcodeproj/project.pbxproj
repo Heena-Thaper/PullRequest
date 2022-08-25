@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		BD7B00D828B69A0A004A3A34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7B00D728B69A0A004A3A34 /* AppDelegate.swift */; };
 		BD7B00DA28B69A0A004A3A34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7B00D928B69A0A004A3A34 /* SceneDelegate.swift */; };
-		BD7B00DC28B69A0A004A3A34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7B00DB28B69A0A004A3A34 /* ViewController.swift */; };
 		BD7B00DF28B69A0A004A3A34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD7B00DD28B69A0A004A3A34 /* Main.storyboard */; };
 		BD7B00E128B69A0C004A3A34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD7B00E028B69A0C004A3A34 /* Assets.xcassets */; };
 		BD7B00E428B69A0C004A3A34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD7B00E228B69A0C004A3A34 /* LaunchScreen.storyboard */; };
 		BDDBE28228B7A1CC006478B4 /* PRListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDBE28128B7A1CC006478B4 /* PRListViewController.swift */; };
+		BDDBE28428B7A48B006478B4 /* PRDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDBE28328B7A48B006478B4 /* PRDetailCell.swift */; };
+		BDDBE28A28B7A4E4006478B4 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDBE28928B7A4E4006478B4 /* APIManager.swift */; };
+		BDDBE28C28B7A512006478B4 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDBE28B28B7A512006478B4 /* Constant.swift */; };
+		BDDBE28E28B7A57C006478B4 /* PRModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDBE28D28B7A57C006478B4 /* PRModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BD7B00D428B69A0A004A3A34 /* PullRequest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PullRequest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD7B00D728B69A0A004A3A34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD7B00D928B69A0A004A3A34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BD7B00DB28B69A0A004A3A34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BD7B00DE28B69A0A004A3A34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD7B00E028B69A0C004A3A34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD7B00E328B69A0C004A3A34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD7B00E528B69A0C004A3A34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDDBE28128B7A1CC006478B4 /* PRListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRListViewController.swift; sourceTree = "<group>"; };
+		BDDBE28328B7A48B006478B4 /* PRDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRDetailCell.swift; sourceTree = "<group>"; };
+		BDDBE28928B7A4E4006478B4 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		BDDBE28B28B7A512006478B4 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		BDDBE28D28B7A57C006478B4 /* PRModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +64,51 @@
 		BD7B00D628B69A0A004A3A34 /* PullRequest */ = {
 			isa = PBXGroup;
 			children = (
+				BDDBE28828B7A4D4006478B4 /* Utility */,
+				BDDBE28528B7A48F006478B4 /* Model */,
+				BDDBE28628B7A496006478B4 /* View */,
+				BDDBE28728B7A49B006478B4 /* Controller */,
 				BD7B00D728B69A0A004A3A34 /* AppDelegate.swift */,
 				BD7B00D928B69A0A004A3A34 /* SceneDelegate.swift */,
-				BDDBE28128B7A1CC006478B4 /* PRListViewController.swift */,
-				BD7B00DB28B69A0A004A3A34 /* ViewController.swift */,
 				BD7B00DD28B69A0A004A3A34 /* Main.storyboard */,
 				BD7B00E028B69A0C004A3A34 /* Assets.xcassets */,
 				BD7B00E228B69A0C004A3A34 /* LaunchScreen.storyboard */,
 				BD7B00E528B69A0C004A3A34 /* Info.plist */,
 			);
 			path = PullRequest;
+			sourceTree = "<group>";
+		};
+		BDDBE28528B7A48F006478B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BDDBE28D28B7A57C006478B4 /* PRModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BDDBE28628B7A496006478B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BDDBE28328B7A48B006478B4 /* PRDetailCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BDDBE28728B7A49B006478B4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BDDBE28128B7A1CC006478B4 /* PRListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BDDBE28828B7A4D4006478B4 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				BDDBE28928B7A4E4006478B4 /* APIManager.swift */,
+				BDDBE28B28B7A512006478B4 /* Constant.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD7B00DC28B69A0A004A3A34 /* ViewController.swift in Sources */,
 				BD7B00D828B69A0A004A3A34 /* AppDelegate.swift in Sources */,
 				BDDBE28228B7A1CC006478B4 /* PRListViewController.swift in Sources */,
+				BDDBE28A28B7A4E4006478B4 /* APIManager.swift in Sources */,
+				BDDBE28E28B7A57C006478B4 /* PRModel.swift in Sources */,
+				BDDBE28428B7A48B006478B4 /* PRDetailCell.swift in Sources */,
 				BD7B00DA28B69A0A004A3A34 /* SceneDelegate.swift in Sources */,
+				BDDBE28C28B7A512006478B4 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
